@@ -15,17 +15,14 @@ Example Usage:
 
 temperatures = convertTemp(23.00)
 print(temperatures)
-Example Output:
 
+Example Output:
 [296.15, 73.40]
 """
-# def convertTemp(celsius):
-#     if celsius == "Kelvin":
-#         return celsius + 273.15
-#     else:
-#         return celsius * 1.80 + 32.00
-# temperatures = convertTemp(23.00)
-# print(temperatures)
+def convertTemp(celsius):
+    return [celsius + 273.15, celsius * 1.80 + 32.00]
+temperatures = convertTemp(23.00)
+print(temperatures)
 
 """
 Problem 2: Average Score

@@ -45,7 +45,9 @@ Example Output: Today's mood: 🥱
 
 """
 Problem 3: Lunch Menu
-The following function accepts one parameter menu. Copy this code into your IDE and add a function call so that "Lunch today is: 🍕" is printed to the console.
+The following function accepts one parameter menu. Copy this 
+code into your IDE and add a function call so that
+ "Lunch today is: 🍕" is printed to the console.
 
 def print_menu(menu):
     print("Lunch today is: " + menu)
@@ -73,12 +75,12 @@ Example Input: 20 and 8
 Example Output: 56
 
 """
-# def sum_num(a, b):
-#     first_sum = sum((a, b))
-#     first_sum *= 2
-#     print(first_sum)
-# sum_num(20, 8)
 
+# def sum(a, b):
+#     return a + b
+# first_num = sum(10, 10)
+# double = sum(first_num, first_num)
+# print(double)
 
 """
 Problem 5: Product of Two Integers
@@ -115,13 +117,13 @@ child
 adult
 """
 
-def classify_age(age):
+# def classify_age(age):
+
+#     if age < 18:
+#        return "child"
     
-    if age < 18:
-       return "child"
-    
-    else:
-        return "adult"
+#     else:
+#         return "adult"
     
 # output = classify_age(18)
 # print(output)

@@ -1,7 +1,9 @@
 """
 Problem Set Version 1
 Problem 1: All In
-Write a function all_in() that takes in a list of integers a and a list of integers b as parameters. Given these two lists, return True if every element in list a is in list b. Return False otherwise.
+Write a function all_in() that takes in a list of integers a 
+and a list of integers b as parameters. Given these two lists, 
+return True if every element in list a is in list b. Return False otherwise.
 
 def all_in(a, b):
     pass
@@ -82,12 +84,12 @@ Key: spongebob
 Value: squarepants
 """
 # def print_pair(dictionary, target):
-#     for d in dictionary:
-#         if d in  target:
-#             print(f"key: {d}")
-#             print(f"value: {dictionary[d]}")
+#         if target in dictionary:
+#             print(f"Key: {target}")
+#             print(f"Value: {dictionary[target]}")
 #         else:
 #             print("That pair does not exist!")
+
 # dictionary = {"spongebob": "squarepants", "patrick": "star", "squidward": "tentacles"}
 # print_pair(dictionary, "patrick")
 # print_pair(dictionary, "plankton")
@@ -139,7 +141,7 @@ keys
 #         return "values"
     
 #     else:
-#         "balanced"
+#         return "balanced"
 # dictionary1 = {1:10, 2:20, 3:30, 4:40, 5:50, 6:60}
 # greater_sum = keys_v_values(dictionary1)
 # print(greater_sum)
@@ -186,28 +188,29 @@ Example Output:
 }
 """
 
-# def restock_inventory(current_inventory, restock_list):
+def restock_inventory(current_inventory, restock_list):
     
-#     for key, val in current_inventory.items(): 
-#         if key in restock_list:
-#             current_inventory[key] += val
-#         else:
-#             current_inventory[key] = val
-#     return current_inventory
+    for key in current_inventory: 
+        if key in restock_list:
+            current_inventory[key] += restock_list[key]
+    for key in restock_list:
+        if key not in current_inventory:
+            current_inventory[key] = restock_list[key]
+    return current_inventory
 
-# current_inventory = {
-#     "apples": 30,
-#     "bananas": 15,
-#     "oranges": 10
-# }
+current_inventory = {
+    "apples": 30,
+    "bananas": 15,
+    "oranges": 10
+}
 
-# restock_list = {
-#     "oranges": 20,
-#     "apples": 10,
-#     "pears": 5
-# }
+restock_list = {
+    "oranges": 20,
+    "apples": 10,
+    "pears": 5
+}
 
-# print(restock_inventory(current_inventory, restock_list))
+print(restock_inventory(current_inventory, restock_list))
 
 """
 Problem 6: Calculate GPA
@@ -335,16 +338,3 @@ Example Output: {0: "apple", 1: "banana", 2: "cherry"}
 #     return  mapping
 # lst = ["apple", "banana", "cherry"]
 # print(index_to_value_map(lst))         
-        
-        
-
-    
-    
-
-
-            
-            
-            
-    
-        
-               
