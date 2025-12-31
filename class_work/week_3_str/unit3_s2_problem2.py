@@ -27,8 +27,8 @@ Example Output: [1, 2, 3, 4, 5]
 Problem 2: Delete Minimum
 Write a function delete_minimum_elements(nums) that takes in a list of 
 integers nums as a parameter and continuously removes the minimum element 
-until the list is empty. The function returns a new list of all the elements in 
-nums in the order in which they were removed.
+until the list is empty. The function returns a new list of all the elements 
+in nums in the order in which they were removed.
 
 def delete_minimum_elements(nums):
     pass
@@ -54,9 +54,10 @@ Example Output: [1,2,3,3,5,8]
 
 """
 Problem 3: Longest Common Prefix
-Write a function longest_common_prefix() that takes in a list of strings strings as a parameter. 
-The function returns the longest common prefix (not substring) of all strings and 
-if there are none, it returns an empty string "".
+Write a function longest_common_prefix() that takes in a list of strings 
+strings as a parameter. The function returns the longest common prefix 
+(not substring) of all strings and if there are none, it returns 
+an empty string "".
 
 def longest_common_prefix(strings):
     pass
@@ -163,18 +164,16 @@ Example Output:
 # s2 cannot be partitioned into more parts because of the "a" character at the end
 [16]
 """
-
-def partition_label(s):
     
 
 
 """
 Problem 6: Interleave Lists
 Write a function interleave_lists() that accepts two lists as parameters. 
-The function should return a new list that combines the given lists by alternating 
-which list it takes its next element from. It will take elements in order, 
-and if one list is longer it will append the remaining elements to the end of the 
-interleaved list.
+The function should return a new list that combines the given lists by 
+alternating which list it takes its next element from. It will take elements 
+in order, and if one list is longer it will append the remaining elements 
+to the end of the interleaved list.
 
 def interleave_lists(lst1, lst2):
     pass
