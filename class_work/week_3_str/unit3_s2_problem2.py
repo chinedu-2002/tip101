@@ -70,7 +70,6 @@ strs = ["dog", "racecar", "car"]
 common_str = longest_common_prefix(strs)
 print(common_str)
 Example Output:
-
 fl
 
 """
